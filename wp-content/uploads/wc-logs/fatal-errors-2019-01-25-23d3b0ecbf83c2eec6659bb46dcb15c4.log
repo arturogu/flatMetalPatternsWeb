@@ -1,0 +1,8 @@
+2019-01-25T16:23:46+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_() in C:\wamp64\www\lemon\metalPatterns\wp-content\themes\storefront-child\index.php:71
+Stack trace:
+#0 C:\wamp64\www\lemon\metalPatterns\wp-includes\template-loader.php(74): include()
+#1 C:\wamp64\www\lemon\metalPatterns\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\l...')
+#2 C:\wamp64\www\lemon\metalPatterns\index.php(17): require('C:\\wamp64\\www\\l...')
+#3 {main}
+  thrown en C:\wamp64\www\lemon\metalPatterns\wp-content\themes\storefront-child\index.php en la línea 71
+
