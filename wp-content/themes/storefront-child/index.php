@@ -1,10 +1,6 @@
 <?php get_header() ?>
     <body>
     <div class="container-fluid" id="home" style="background-image:url(<?php echo bloginfo( 'template_url' ) . '/'; ?>assets/images/banner1.png;">
-        <div class="col-sm-2" id="navBarLogo">
-            <img src="<?php echo bloginfo( 'template_url' ) . '/'; ?>assets/images/logos/Principal.png;">
-        </div>
-<!--	    --><?php //wp_nav_menu( array( 'theme_location' => 'menu-principal2' ) ); ?>
         <div class="container" id="mainText">
             <div class="row">
                 <div class="col">

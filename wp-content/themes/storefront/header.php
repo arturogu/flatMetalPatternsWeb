@@ -60,5 +60,5 @@
 
 	<div id="content" class="site-content" tabindex="-1">
 
-		<?php
-		do_action( 'storefront_content_top' );
+<?php
+do_action( 'storefront_content_top' );

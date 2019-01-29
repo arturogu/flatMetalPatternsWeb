@@ -385,11 +385,39 @@ Template: storefront */
 }
 
 .site-header {
-    display: none;
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    border: none;
 }
 
-.site-footer {
-    display: none;
+.main-navigation ul li a:hover, .main-navigation ul li:hover > a, .site-title a:hover, .site-header ul.menu li.current-menu-item > a{
+    color: white;
+    background-color: #b31628;
+    border-radius: 10px;
+    padding: .5em 2em;
+}
+
+.main-navigation ul li a, .site-title a, ul.menu li a, .site-branding h1 a, .site-footer .storefront-handheld-footer-bar a:not(.button), button.menu-toggle, button.menu-toggle:hover, .handheld-navigation .dropdown-toggle {
+    color: #b31628;
+    /*padding: .5em 2em;*/
+}
+
+.main-navigation ul.menu>li>a, .main-navigation ul.nav-menu>li>a {
+    padding: .5em 2em;
+}
+
+
+#site-navigation {
+    position: absolute;
+    right: -20%;
+    top: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    #site-navigation {
+        right: 10%;
+    }
 }
 
 @media screen and (max-width: 576px) {
