@@ -63,7 +63,6 @@
                         </a>
                         <div class="row">
                             <div class="product-details-alignment"><?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?></div>
-<!--                            <div id="product-search"><img src="--><?php //echo bloginfo( 'template_url' ) . '/'; ?><!--assets/images/search.png;"></div>-->
                             <div id="product-price">$<?php echo $_product->get_price();?></div>
                             <div class="small-line"></div>
                             <div class="product-details-alignment" id="product-title"><?php echo get_the_title();?></div>
@@ -172,17 +171,9 @@
     </div>
     <div class="container-fluid" id="contacto" style="background-image:url(<?php echo bloginfo( 'template_url' ) . '/'; ?>assets/images/pipes2.png;">
         <div id="contacto-title">Contáctanos</div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="form">
             <div class="col-md-6">
-                <form>
-                    <div class="form-group" id="form">
-                        <input class="form-control inputArea" type="text" placeholder="Nombre">
-                        <input class="form-control inputArea" type="text" placeholder="Correo electrónico">
-                        <input class="form-control inputArea" type="text" placeholder="Teléfono">
-                        <textarea class="form-control inputArea" placeholder="Mensaje" rows="4"></textarea>
-                    </div>
-                    <button type="submit" value="submit" class="btn btn-primary" id="contacto-submit">Enviar</button>
-                </form>
+	            <?php echo do_shortcode('[contact-form-7 id="97" title="Contacto"]'); ?>
             </div>
         </div>
         <div id="contacto-img">
