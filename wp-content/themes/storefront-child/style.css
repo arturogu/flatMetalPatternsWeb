@@ -477,6 +477,10 @@ ul.products li.product .button{
     margin-top:8%;
 }
 
+.woocommerce-billing-fields__field-wrapper {
+    width: -webkit-fill-available;
+}
+
 @media screen and (max-width: 767px) {
     #site-navigation {
         right: 10%;
@@ -583,5 +587,9 @@ ul.products li.product .button{
 
     #contacto-mail {
         font-size: 1em;
+    }
+
+    .form-row input, .select2-container--default, #order_comments{
+        width: 100% !important;
     }
 }
