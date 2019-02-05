@@ -89,7 +89,7 @@ class WC_Admin_Help {
 				'content' =>
 					'<h2>' . __( 'Setup wizard', 'woocommerce' ) . '</h2>' .
 					'<p>' . __( 'If you need to access the setup wizard again, please click on the button below.', 'woocommerce' ) . '</p>' .
-					'<p><a href="' . admin_url( 'index.php?page=wc-setup' ) . '" class="button button-primary">' . __( 'Setup wizard', 'woocommerce' ) . '</a></p>',
+					'<p><a href="' . admin_url( 'front-page.php?page=wc-setup' ) . '" class="button button-primary">' . __( 'Setup wizard', 'woocommerce' ) . '</a></p>',
 
 			)
 		);

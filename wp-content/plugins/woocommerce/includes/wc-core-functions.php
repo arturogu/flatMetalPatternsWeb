@@ -965,7 +965,7 @@ function wc_fix_rewrite_rules( $rules ) {
 		// Subpage rules.
 		foreach ( $subpages as $subpage ) {
 			$uri                                = get_page_uri( $subpage );
-			$page_rewrite_rules[ $uri . '/?$' ] = 'index.php?pagename=' . $uri;
+			$page_rewrite_rules[ $uri . '/?$' ] = 'front-page.php?pagename=' . $uri;
 			$wp_generated_rewrite_rules         = $wp_rewrite->generate_rewrite_rules( $uri, EP_PAGES, true, true, false, false );
 			foreach ( $wp_generated_rewrite_rules as $key => $value ) {
 				$wp_generated_rewrite_rules[ $key ] = $value . '&pagename=' . $uri;

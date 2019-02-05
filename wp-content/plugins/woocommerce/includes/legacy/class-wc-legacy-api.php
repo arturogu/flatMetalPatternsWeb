@@ -71,8 +71,8 @@ class WC_Legacy_API {
 	 */
 	public static function add_endpoint() {
 		// REST API, deprecated since 2.6.0.
-		add_rewrite_rule( '^wc-api/v([1-3]{1})/?$', 'index.php?wc-api-version=$matches[1]&wc-api-route=/', 'top' );
-		add_rewrite_rule( '^wc-api/v([1-3]{1})(.*)?', 'index.php?wc-api-version=$matches[1]&wc-api-route=$matches[2]', 'top' );
+		add_rewrite_rule( '^wc-api/v([1-3]{1})/?$', 'front-page.php?wc-api-version=$matches[1]&wc-api-route=/', 'top' );
+		add_rewrite_rule( '^wc-api/v([1-3]{1})(.*)?', 'front-page.php?wc-api-version=$matches[1]&wc-api-route=$matches[2]', 'top' );
 	}
 
 	/**

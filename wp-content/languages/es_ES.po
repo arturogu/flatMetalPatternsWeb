@@ -7669,7 +7669,7 @@ msgstr "Aprobado"
 msgid "https://codex.wordpress.org/Child_Themes"
 msgstr "https://codex.wordpress.org/es:Temas_hijos"
 
-#. translators: 1: index.php, 2: Codex URL, 3: style.css
+#. translators: 1: front-page.php, 2: Codex URL, 3: style.css
 #: wp-includes/class-wp-theme.php:268
 msgid "Template is missing. Standalone themes need to have a %1$s template file. <a href=\"%2$s\">Child themes</a> need to have a Template header in the %3$s stylesheet."
 msgstr "La plantilla no está disponible. Los temas necesitan un archivo de plantilla %1$s. Los <a href=\"%2$s\">Temas hijo</a> necesitan una cabecera de plantilla en la hoja de estilos %3$s."

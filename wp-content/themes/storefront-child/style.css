@@ -8,6 +8,46 @@ Template: storefront */
 
 /** FONTS **/
 
+@font-face {
+    font-family: Montserrat;
+    src:url(css/fonts/Montserrat-Regular.otf);
+}
+
+@font-face {
+    font-family: Montserrat-Black;
+    src:url(css/fonts/Montserrat-Black.otf);
+}
+
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src:url(css/fonts/Montserrat-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src:url(css/fonts/Montserrat-Light.otf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src:url(css/fonts/Montserrat-SemiBold.otf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src:url(css/fonts/Montserrat-Medium.otf);
+}
+
+@font-face {
+    font-family: Montserrat-Thin;
+    src:url(css/fonts/Montserrat-Thin.otf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src:url(css/fonts/Montserrat-Bold.otf);
+}
+
 #home {
     position: relative;
     min-height: calc(100vh);
@@ -32,7 +72,7 @@ Template: storefront */
 }
 
 #mainText1 {
-    font-family: Montserrat;
+    font-family: Montserrat-Black, sans-serif;
     font-size: 3.75em;
     font-weight: 900;
     line-height: 1;
@@ -41,7 +81,7 @@ Template: storefront */
 }
 
 #mainText2 {
-    font-family: Montserrat;
+    font-family: Montserrat-ExtraBold, sans-serif;
     font-size: 3em;
     font-weight: 800;
     line-height: 1.25;
@@ -50,7 +90,7 @@ Template: storefront */
 }
 
 #mainText3 {
-    font-family: Montserrat;
+    font-family: Montserrat-Light, sans-serif;
     font-size: 4.5em;
     font-weight: 300;
     line-height: .5;
@@ -79,7 +119,7 @@ Template: storefront */
 }
 
 #productos-title {
-    font-family: Montserrat;
+    font-family: Montserrat-ExtraBold, sans-serif;
     font-size: 3em;
     font-weight: 800;
     line-height: 0.78;
@@ -88,7 +128,7 @@ Template: storefront */
 }
 
 #productos-title2 {
-    font-family: Montserrat;
+    font-family: Montserrat-SemiBold, sans-serif;
     font-size: 2.282em;
     font-weight: 600;
     line-height: 1.16;
@@ -152,7 +192,7 @@ Template: storefront */
 }
 
 #nosotros-titles1 {
-    font-family: Montserrat;
+    font-family: Montserrat-ExtraBold, sans-serif;
     font-size: 3em;
     font-weight: 800;
     line-height: 0.78;
@@ -160,7 +200,7 @@ Template: storefront */
 }
 
 #nosotros-titles2 {
-    font-family: Montserrat;
+    font-family: Montserrat-SemiBold, sans-serif;
     font-size: 2.2em;
     font-weight: 600;
     line-height: 1.16;
@@ -168,7 +208,7 @@ Template: storefront */
 }
 
 #nosotros-titles3 {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 2.1em;
     line-height: 1.03;
     color: #b31628;
@@ -182,7 +222,7 @@ Template: storefront */
 
 #nosotros-txt {
     padding-top: 3%;
-    font-family: Montserrat;
+    font-family: Montserrat-Medium, sans-serif;
     font-size: 1.5em;
     font-weight: 500;
     line-height: 1.2;
@@ -197,19 +237,20 @@ Template: storefront */
     background-size: cover;
     display: block;
     color: white;
-    font-family: Montserrat;
 }
 
 #banner1 {
     font-size: 3em;
     font-weight: bold;
     line-height: 1.03;
+    font-family: Montserrat-Bold, sans-serif;
 }
 
 #banner2 {
     font-size: 3.8em;
     font-weight: bold;
     line-height: 1.2;
+    font-family: Montserrat-Bold, sans-serif;
 }
 
 #banner3 {
@@ -217,6 +258,7 @@ Template: storefront */
     font-weight: 100;
     line-height: 1.2;
     text-align: center;
+    font-family: Montserrat-Thin, sans-serif;
 }
 
 #blog {
@@ -236,7 +278,7 @@ Template: storefront */
 
 #blog-title {
     padding-left: 15%;
-    font-family: Montserrat;
+    font-family: Montserrat-ExtraBold, sans-serif;
     font-size: 3em;
     font-weight: 800;
     line-height: 0.78;
@@ -245,7 +287,7 @@ Template: storefront */
 
 .blog-description {
     color: white;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 18px;
     line-height: 1.33;
     position: absolute;
@@ -292,7 +334,7 @@ Template: storefront */
 
 #contacto-title {
     padding-left: 15%;
-    font-family: Montserrat;
+    font-family: Montserrat-Bold, sans-serif;
     font-size: 3em;
     font-weight: bold;
     line-height: 0.75;
@@ -317,7 +359,7 @@ input::placeholder {
     background-color: #cc706e;
     border-color: #cc706e;
     color: white;
-    font-family: Montserrat;
+    font-family: Montserrat-Thin, sans-serif;
     font-size: 1.5em;
     font-weight: 100;
     line-height: 1.02;
@@ -340,7 +382,7 @@ input::placeholder {
 }
 
 #contacto-mail {
-    font-family: Montserrat;
+    font-family: Montserrat-Light, sans-serif;
     font-size: 1.5em;
     font-weight: 300;
     line-height: 0.85;
@@ -366,6 +408,7 @@ input::placeholder {
 #footer {
     height: 50px;
     background-color: #b31628;
+    font-family: Montserrat, sans-serif;
 }
 
 #site-header-cart{
@@ -481,6 +524,10 @@ ul.products li.product .button{
     width: -webkit-fill-available;
 }
 
+.col-full.skip-link, .site-branding, .site-search {
+    display: inherit;
+}
+
 @media screen and (max-width: 767px) {
     #site-navigation {
         right: 10%;
@@ -489,7 +536,7 @@ ul.products li.product .button{
 
 @media screen and (max-width: 576px) {
     #mainText {
-        top: 35%;
+        top: 20%;
         right: 0;
     }
 

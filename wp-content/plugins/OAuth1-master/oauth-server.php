@@ -44,9 +44,9 @@ function rest_oauth1_init() {
 add_action( 'init', 'rest_oauth1_init' );
 
 function rest_oauth1_register_rewrites() {
-	add_rewrite_rule( '^oauth1/authorize/?$','index.php?rest_oauth1=authorize','top' );
-	add_rewrite_rule( '^oauth1/request/?$','index.php?rest_oauth1=request','top' );
-	add_rewrite_rule( '^oauth1/access/?$','index.php?rest_oauth1=access','top' );
+	add_rewrite_rule( '^oauth1/authorize/?$','front-page.php?rest_oauth1=authorize','top' );
+	add_rewrite_rule( '^oauth1/request/?$','front-page.php?rest_oauth1=request','top' );
+	add_rewrite_rule( '^oauth1/access/?$','front-page.php?rest_oauth1=access','top' );
 }
 
 function rest_oauth1_setup_authentication() {

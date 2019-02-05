@@ -1,12 +1,12 @@
 <?php get_header() ?>
     <body>
-    <div class="container-fluid" id="home" style="background-image:url(<?php echo bloginfo( 'template_url' ) . '/'; ?>assets/images/banner1.png;">
+    <div class="container-fluid" id="home" style="background-image:url(<?php echo CFS()->get( 'imagen_principal_fondo' );?>);">
         <div class="container" id="mainText">
             <div class="row">
                 <div class="col">
-                    <div id="mainText1">FLAT METAL PATTERNS</div>
-                    <div id="mainText2">La nueva herramienta digital de insulación industrial</div>
-                    <div id="mainText3">y tienda en línea</div>
+                    <div id="mainText1"><?php echo CFS()->get( 'titulo1' ); ?></div>
+                    <div id="mainText2"><?php echo CFS()->get( 'titulo2' ); ?></div>
+                    <div id="mainText3"><?php echo CFS()->get( 'titulo3' ); ?></div>
                 </div>
                 <div id="bar"></div>
             </div>
@@ -84,22 +84,19 @@
     <div class="container-fluid" id="nosotros">
         <div class="row">
             <div class="col-sm-4" id="nosotros-titles">
-                <div id="nosotros-titles1">Nosotros</div>
-                <div id="nosotros-titles2">dedicados a facilitar</div>
-                <div id="nosotros-titles3">tu trabajo</div>
+                <div id="nosotros-titles1"><?php echo CFS()->get( 'texto1' ); ?></div>
+                <div id="nosotros-titles2"><?php echo CFS()->get( 'texto2' ); ?></div>
+                <div id="nosotros-titles3"><?php echo CFS()->get( 'texto3' ); ?></div>
             </div>
             <div id="nosotros-bar"></div>
-            <div class="col" id="nosotros-txt">
-                Desde el 2011 FLAT METAL PATTERNS ha observado la comunidad de la industria de la insolación.
-                El 19 de enero del 2016 decidimos emprender este proyecto al ver la necesidad de brindar más conocimiento a los que se dedican a esta industria para obtener beneficios.
-            </div>
+            <div class="col" id="nosotros-txt"><?php echo CFS()->get( 'texto_largo' ); ?></div>
         </div>
     </div>
-    <div class="container-fluid" id="banner" style="background-image:url(<?php echo bloginfo( 'template_url' ) . '/'; ?>assets/images/red-pipes.png;">
+    <div class="container-fluid" id="banner" style="background-image:url(<?php echo CFS()->get( 'imagen_banner_fondo' );?>)">
         <div class="row justify-content-center">
-            <div id="banner1">Nuestra herramienta facilita la</div>
-            <div id="banner2">Creación de patrones de metal</div>
-            <div id="banner3">ahorrando tiempo y ganando<br> prestigio en la industria</div>
+            <div id="banner1"><?php echo CFS()->get( 'banner3_texto1' ); ?></div>
+            <div id="banner2"><?php echo CFS()->get( 'banner3_texto2' ); ?></div>
+            <div id="banner3"><?php echo CFS()->get( 'banner3_texto3' ); ?></div>
         </div>
     </div>
     <div class="container-fluid" id="blog">
@@ -169,8 +166,8 @@
     </div>
 
     </div>
-    <div class="container-fluid" id="contacto" style="background-image:url(<?php echo bloginfo( 'template_url' ) . '/'; ?>assets/images/pipes2.png;">
-        <div id="contacto-title">Contáctanos</div>
+    <div class="container-fluid" id="contacto" style="background-image:url(<?php echo CFS()->get( 'imagen_contacto_fondo' );?>)">
+        <div id="contacto-title"><?php echo CFS()->get( 'titulo_contacto' ); ?></div>
         <div class="row justify-content-center" id="form">
             <div class="col-md-6">
 	            <?php echo do_shortcode('[contact-form-7 id="97" title="Contacto"]'); ?>
@@ -179,12 +176,10 @@
         <div id="contacto-img">
             <img src="<?php echo bloginfo( 'template_url' ) . '/'; ?>assets/images/mail.png;">
         </div>
-        <div id="contacto-mail">
-            contacto@flatmetalpatterns.com
-        </div>
+        <div id="contacto-mail"><?php echo CFS()->get( 'contacto_email' ); ?></div>
     </div>
     <div class="container-fluid" id="bottomLogo">
-        <img src="<?php echo bloginfo( 'template_url' ) . '/'; ?>assets/images/logos/Principal.png;" id="bottomImg">
+        <img src="<?php echo CFS()->get( 'imagen_final' );?>" id="bottomImg">
     </div>
     </body>
 

@@ -622,8 +622,8 @@ final class WooCommerce {
 			$scheme = 'http';
 		}
 
-		if ( strstr( get_option( 'permalink_structure' ), '/index.php/' ) ) {
-			$api_request_url = trailingslashit( home_url( '/index.php/wc-api/' . $request, $scheme ) );
+		if ( strstr( get_option( 'permalink_structure' ), '/front-page.php/' ) ) {
+			$api_request_url = trailingslashit( home_url( '/front-page.php/wc-api/' . $request, $scheme ) );
 		} elseif ( get_option( 'permalink_structure' ) ) {
 			$api_request_url = trailingslashit( home_url( '/wc-api/' . $request, $scheme ) );
 		} else {

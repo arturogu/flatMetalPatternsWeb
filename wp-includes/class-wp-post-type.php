@@ -551,14 +551,14 @@ final class WP_Post_Type {
 					$archive_slug = $wp_rewrite->root . $archive_slug;
 				}
 
-				add_rewrite_rule( "{$archive_slug}/?$", "index.php?post_type=$this->name", 'top' );
+				add_rewrite_rule( "{$archive_slug}/?$", "front-page.php?post_type=$this->name", 'top' );
 				if ( $this->rewrite['feeds'] && $wp_rewrite->feeds ) {
 					$feeds = '(' . trim( implode( '|', $wp_rewrite->feeds ) ) . ')';
-					add_rewrite_rule( "{$archive_slug}/feed/$feeds/?$", "index.php?post_type=$this->name" . '&feed=$matches[1]', 'top' );
-					add_rewrite_rule( "{$archive_slug}/$feeds/?$", "index.php?post_type=$this->name" . '&feed=$matches[1]', 'top' );
+					add_rewrite_rule( "{$archive_slug}/feed/$feeds/?$", "front-page.php?post_type=$this->name" . '&feed=$matches[1]', 'top' );
+					add_rewrite_rule( "{$archive_slug}/$feeds/?$", "front-page.php?post_type=$this->name" . '&feed=$matches[1]', 'top' );
 				}
 				if ( $this->rewrite['pages'] ) {
-					add_rewrite_rule( "{$archive_slug}/{$wp_rewrite->pagination_base}/([0-9]{1,})/?$", "index.php?post_type=$this->name" . '&paged=$matches[1]', 'top' );
+					add_rewrite_rule( "{$archive_slug}/{$wp_rewrite->pagination_base}/([0-9]{1,})/?$", "front-page.php?post_type=$this->name" . '&paged=$matches[1]', 'top' );
 				}
 			}
 
@@ -634,7 +634,7 @@ final class WP_Post_Type {
 			remove_rewrite_tag( "%$this->name%" );
 			remove_permastruct( $this->name );
 			foreach ( $wp_rewrite->extra_rules_top as $regex => $query ) {
-				if ( false !== strpos( $query, "index.php?post_type=$this->name" ) ) {
+				if ( false !== strpos( $query, "front-page.php?post_type=$this->name" ) ) {
 					unset( $wp_rewrite->extra_rules_top[ $regex ] );
 				}
 			}

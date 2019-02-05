@@ -57,7 +57,7 @@ class WC_Auth {
 	 * @since 2.4.0
 	 */
 	public static function add_endpoint() {
-		add_rewrite_rule( '^wc-auth/v([1]{1})/(.*)?', 'index.php?wc-auth-version=$matches[1]&wc-auth-route=$matches[2]', 'top' );
+		add_rewrite_rule( '^wc-auth/v([1]{1})/(.*)?', 'front-page.php?wc-auth-version=$matches[1]&wc-auth-route=$matches[2]', 'top' );
 	}
 
 	/**

@@ -156,7 +156,7 @@ class WC_Admin {
 
 			// If the user needs to install, send them to the setup wizard
 			if ( WC_Admin_Notices::has_notice( 'install' ) ) {
-				wp_safe_redirect( admin_url( 'index.php?page=wc-setup' ) );
+				wp_safe_redirect( admin_url( 'front-page.php?page=wc-setup' ) );
 				exit;
 			}
 		}

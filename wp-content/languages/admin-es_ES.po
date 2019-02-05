@@ -2829,7 +2829,7 @@ msgstr "El tema no tiene la hoja de estilos %s."
 msgid "The %s stylesheet doesn&#8217;t contain a valid theme header."
 msgstr "La hoja de estilos %s no tiene una cabecera válida para el tema."
 
-#. translators: %s: index.php
+#. translators: %s: front-page.php
 #: wp-admin/includes/class-theme-upgrader.php:466
 msgid "The theme is missing the %s file."
 msgstr "El tema no tiene el archivo %s."
