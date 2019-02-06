@@ -1,6 +1,6 @@
 /*
 Theme Name: Storefront Child
-Version: 1.0
+Version: 3.2
 Description: Child theme for Storefront.
 Author: Woo
 Author URI: http://woocommerce.com
@@ -65,9 +65,7 @@ Template: storefront */
 }
 
 #mainText {
-    max-width: 900px;
     position: absolute;
-    right: 15%;
     top: 45%;
 }
 
@@ -101,7 +99,7 @@ Template: storefront */
 #bar {
     width: 11px;
     height: 250px;
-    border: 5.5px solid #b31628;
+    border: 6px solid #b31628;
 }
 
 #productos {
@@ -115,7 +113,7 @@ Template: storefront */
 
 #productos-title-container {
     padding-top: 5%;
-    padding-right: 60%;
+    width: fit-content;
 }
 
 #productos-title {
@@ -129,7 +127,7 @@ Template: storefront */
 
 #productos-title2 {
     font-family: Montserrat-SemiBold, sans-serif;
-    font-size: 2.282em;
+    font-size: 2.2em;
     font-weight: 600;
     line-height: 1.16;
     text-align: right;
@@ -169,7 +167,7 @@ Template: storefront */
 
 #product-title {
     line-height: 3.2;
-    font-size: 13.5px;
+    font-size: 13px;
     font-weight: 300;
 }
 
@@ -181,7 +179,7 @@ Template: storefront */
 #nosotros {
     position: relative;
     width: 100%;
-    padding: 5% 10% 5% 5%;
+    padding: 5%;
     background-size: cover;
     display: block;
     background-color: white;
@@ -193,7 +191,7 @@ Template: storefront */
 
 #nosotros-titles1 {
     font-family: Montserrat-ExtraBold, sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 800;
     line-height: 0.78;
     color: #b31628;
@@ -217,13 +215,13 @@ Template: storefront */
 #nosotros-bar {
     width: 11px;
     height: 175px;
-    border: 5.5px solid #b31628;
+    border: 6px solid #b31628;
 }
 
 #nosotros-txt {
     padding-top: 3%;
     font-family: Montserrat-Medium, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 500;
     line-height: 1.2;
     text-align: justify;
@@ -244,6 +242,7 @@ Template: storefront */
     font-weight: bold;
     line-height: 1.03;
     font-family: Montserrat-Bold, sans-serif;
+    text-align: center;
 }
 
 #banner2 {
@@ -251,6 +250,7 @@ Template: storefront */
     font-weight: bold;
     line-height: 1.2;
     font-family: Montserrat-Bold, sans-serif;
+    text-align: center;
 }
 
 #banner3 {
@@ -524,19 +524,76 @@ ul.products li.product .button{
     width: -webkit-fill-available;
 }
 
-.col-full.skip-link, .site-branding, .site-search {
+.col-full.skip-link, .site-branding{
     display: inherit;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
+    .primary-navigation {
+        display: none;
+    }
+    .handheld-navigation, .main-navigation.toggled .handheld-navigation, .main-navigation.toggled div.menu, .menu-toggle{
+        display: block;
+    }
+    #bar{
+        height: 375px;
+    }
+}
+
+@media screen and (max-width: 769px) {
     #site-navigation {
-        right: 10%;
+        right: 5%;
+        top: 25%;
+    }
+
+    #mainText {
+        top: 30%;
+    }
+
+    #mainText2 {
+        line-height: 1;
+    }
+
+    #mainText3 {
+        line-height: .8;
+    }
+
+    #bar {
+        height: 440px;
+    }
+
+    #productos-title2 {
+        font-size: 2.2em;
+    }
+
+    #nosotros-titles1 {
+        font-size: 2em;
+    }
+
+    #nosotros-titles2 {
+        font-size: 1.8em;
+    }
+
+    #nosotros-titles3 {
+        font-size: 1.8em;
+    }
+
+    #nosotros-txt {
+        font-size: 1em;
+    }
+
+    #banner1 {
+        font-size: 2.5em;
+    }
+
+    #banner3 {
+        font-size: 3em;
     }
 }
 
 @media screen and (max-width: 576px) {
     #mainText {
-        top: 20%;
+        top: 25%;
         right: 0;
     }
 
