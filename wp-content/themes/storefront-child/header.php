@@ -61,5 +61,11 @@
 
 	<div id="content" class="site-content" tabindex="-1">
 
+		<?php
+		if(is_shop()){
+        if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('store_menu') ) : ?>
+
+        <?php endif; ?>   <?php } ?>
+
 <?php
 do_action( 'storefront_content_top' );

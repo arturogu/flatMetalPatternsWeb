@@ -6,7 +6,7 @@ RewriteBase /lemon/metalPatterns/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /lemon/metalPatterns/index.php [L]
+RewriteRule . /lemon/metalPatterns/front-page.php [L]
 </IfModule>
 
 # END WordPress

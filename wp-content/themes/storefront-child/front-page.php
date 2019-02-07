@@ -2,7 +2,7 @@
     <body>
     <div class="container-fluid" id="home" style="background-image:url(<?php echo CFS()->get( 'imagen_principal_fondo' );?>);">
         <div class="container" id="mainText">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col">
                     <div id="mainText1"><?php echo CFS()->get( 'titulo1' ); ?></div>
                     <div id="mainText2"><?php echo CFS()->get( 'titulo2' ); ?></div>

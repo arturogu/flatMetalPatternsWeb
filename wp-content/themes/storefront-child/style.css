@@ -1,6 +1,6 @@
 /*
 Theme Name: Storefront Child
-Version: 3.2
+Version: 3.3
 Description: Child theme for Storefront.
 Author: Woo
 Author URI: http://woocommerce.com
@@ -500,6 +500,12 @@ input::placeholder {
     bottom: 0;
     left: 50%;
     transform: translate(-50%,0);
+}
+
+.categories-widget {
+    position: absolute;
+    top: 20%;
+    left: 5%;
 }
 
 span.price{
