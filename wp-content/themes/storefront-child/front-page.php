@@ -1,5 +1,4 @@
 <?php get_header() ?>
-    <body>
     <div class="container-fluid" id="home" style="background-image:url(<?php echo CFS()->get( 'imagen_principal_fondo' );?>);">
         <div class="container" id="mainText">
             <div class="row justify-content-center">
@@ -10,6 +9,9 @@
                 </div>
                 <div id="bar"></div>
             </div>
+            <a href='https://play.google.com/store/apps/details?id=com.flatmetalpatterns.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                <img alt='Disponible en Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png' id="playstore"/>
+            </a>
         </div>
     </div>
     <div class="container-fluid" id="productos">
@@ -104,7 +106,6 @@
         <!-- posts del blog-->
         <div id="blog-posts" class="spacing">
             <div class="container">
-
 				    <?php
 				    if(have_posts())
 				    {
@@ -180,6 +181,9 @@
     </div>
     <div class="container-fluid" id="bottomLogo">
         <img src="<?php echo CFS()->get( 'imagen_final' );?>" id="bottomImg">
+        <a href='https://play.google.com/store/apps/details?id=com.flatmetalpatterns.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+            <img alt='Disponible en Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png' id="playstore"/>
+        </a>
     </div>
     </body>
 

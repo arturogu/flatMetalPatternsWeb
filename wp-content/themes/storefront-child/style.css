@@ -1,6 +1,6 @@
 /*
 Theme Name: Storefront Child
-Version: 4.0
+Version: 7
 Description: Child theme for Storefront.
 Author: Lemonthree
 Author URI: http://lemonthree.mx
@@ -405,6 +405,12 @@ input::placeholder {
     margin: 5% auto 5% auto;
 }
 
+#playstore {
+    width: 250px;
+    height: auto;
+    margin: 5% auto 5% auto;
+}
+
 #footer {
     height: 50px;
     background-color: #b31628;
@@ -461,13 +467,13 @@ input::placeholder {
 }
 
 .content-area {
-    margin-top: 5%;
+    margin-top: 15%;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.entry-title {
-    display: none;
+.woocommerce-message {
+    margin-top: 150px;
 }
 
 .woocommerce-billing-fields__field-wrapper{
@@ -533,6 +539,10 @@ ul.products li.product .button{
     display: inherit;
 }
 
+.page-title {
+    display: none !important;
+}
+
 @media screen and (max-width: 991px) {
     .primary-navigation {
         display: none;
@@ -542,6 +552,9 @@ ul.products li.product .button{
     }
     #bar{
         height: 375px;
+    }
+    .content-area {
+        margin-top: 20%;
     }
 }
 
@@ -706,11 +719,17 @@ ul.products li.product .button{
         margin-top: 25%;
         margin-right: 5%;
     }
+    .content-area {
+        margin-top: 30%;
+    }
 }
 
 @media screen and (max-width: 440px) {
     .categories-widget {
         margin-top: 35%;
         margin-right: 5%;
+    }
+    .content-area {
+        margin-top: 40%;
     }
 }

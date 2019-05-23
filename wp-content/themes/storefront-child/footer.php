@@ -20,6 +20,9 @@
         <div class="text-center">
             Desarrollado por Lemon Three. Todos los derechos reservados 2019.
         </div>
+        <div class="text-center">
+            Google Play y el logotipo de Google Play son marcas comerciales de Google LLC.
+        </div>
 
 	</div><!-- .col-full -->
 </footer><!-- #colophon -->
