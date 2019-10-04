@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdc74606-bf92-41f0-8c15-2cdf7641d8a0" name="Default" comment="fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/archive-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/archive-product.php" afterDir="false" />
-    </list>
+    <list default="true" id="fdc74606-bf92-41f0-8c15-2cdf7641d8a0" name="Default" comment="productos duplicados" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -406,7 +403,7 @@
       <workItem from="1556895912050" duration="1504000" />
       <workItem from="1557426857981" duration="295000" />
       <workItem from="1558628509368" duration="2827000" />
-      <workItem from="1558715035463" duration="1548000" />
+      <workItem from="1558715035463" duration="2195000" />
     </task>
     <task id="LOCAL-00001" summary="navbar and styles">
       <created>1548793740387</created>
@@ -485,11 +482,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558630109520</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="productos duplicados">
+      <created>1558716612941</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1558716612942</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="522914000" />
+    <option name="totallyTimeSpent" value="523561000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,7 +506,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24295302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24960339" />
@@ -556,7 +559,8 @@
     <MESSAGE value="store widget categories" />
     <MESSAGE value="login and css" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="productos duplicados" />
+    <option name="LAST_COMMIT_MESSAGE" value="productos duplicados" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\wamp64\www\lemon\metalPatterns</wordpressPath>
